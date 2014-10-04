@@ -4,4 +4,5 @@ XiaMiSongSearch是我在国庆期间撸的一个搜歌的东西，本来的想�
 对于一个前端渣来说，能用的就行，不过logo实在是丑的一逼（花了10分钟P出来的），以后有时间在改改logo吧，至于一些面板折叠神马的用的都是bootstrap现有的组件了。  
 其实本来还带了一个下载功能的，不过想着还是支持正版音乐吧，就没放上面，不过细心的人总会发现的。  
 再次感谢[虾米音乐](http://www.xiami.com/)给我们带来的美好音乐时光。  
-能把README写这么长，我也是蛮拼的。
+能把README写这么长，我也是蛮拼的。  
+demo在[coding](http://xiamisongsearch.coding.io/)上
