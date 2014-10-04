@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <style>
+        body { padding-bottom: 70px; }
+        .center {
+        width: auto;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .text-center {
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align:center;padding:10px 0px 15px 0px;">
+        <a href="/"><img src="http://blogcn.qiniudn.com/Xiamisongsearch_little.jpg" width="750px" height="60px" class="img-rounded"/></a>
+    </div>
+    <div style="width:750px;text-align:center;margin:0 auto;padding:200px 50px 0px 50px">
+        <form action="/q" method="get">
+            <div class="col-lg-6;center">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="key">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="submit" ><span class="glyphicon glyphicon-search"></span></button>
+                    </span>
+                </div>
+            </div>
+        </form>
+        <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+            <div class="container">
+                所有搜索结果均来自<span class="glyphicon glyphicon glyphicon-music" style="padding:0px 0px 0px 5px"></span><a href="http://www.xiami.com/">虾米音乐</a><br>
+                本站建立在<a href="https://coding.net/u/omengye/p/xiami_song_search/git">coding演示</a>上, 由伟大的<a href="http://www.tornadoweb.org/en/stable/">tornado</a>强力驱动<br>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>

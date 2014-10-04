@@ -1,0 +1,57 @@
+<table class="table">
+    {% if song_info['artist_id'] %}
+    <tr>
+        <td>
+            <embed src="http://www.xiami.com/widget/{{ song_info['artist_id'] }}_{{ song_info['song_id'] }}/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed>
+        </td>
+    </tr>
+    {% end %}
+    <tr>
+        <td>专辑名</td>
+        <td>{{song_info['album_title']}}</td>
+    </tr>
+    {% if song_info['artist_id'] %}
+    <tr>
+        <td>艺人</td>
+        <td><a href="http://www.xiami.com/artist/{{song_info['artist_id']}}">{{song_info['artist_title']}}</a></td>
+    </tr>
+    {% end %}
+    {% if song_info['location'] %}
+    <tr>
+        <td>歌手国家</td>
+        <td>{{song_info['location']}}</td>
+    </tr>
+    {% end %}
+    {% if song_info['generes'] %}
+    <tr>
+        <td>歌手风格</td>
+        <td>
+        {% for genere in song_info['generes']%}
+            <span class="label label-default">{{genere}}</span>
+        {% end %}
+        </td>
+    </tr>
+    {% end %}
+    {% if song_info['album_rank'] %}
+    <tr>
+        <td>专辑得分</td>
+        <td>{{song_info['album_rank']}}</td>
+    </tr>
+    <tr>
+        <td>评价人数</td>
+        <td>{{song_info['album_votes']}}</td>
+    </tr>
+    {% end %}
+    <tr>
+        <td>专辑语种</td>
+        <td>{{song_info['lang']}}</td>
+    </tr>
+    <tr>
+        <td>唱片公司</td>
+        <td>{{song_info['com']}}</td>
+    </tr>
+    <tr>
+        <td>发行时间</td>
+        <td>{{song_info['date']}}</td>
+    </tr>
+</table>
